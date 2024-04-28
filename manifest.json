@@ -1,0 +1,13 @@
+{
+	"manifest_version": 3,
+	"name": "Outer Wilds memories",
+	"description": "Choose a random music from the Outer Wilds soundtrack and play it to you, bringing you back the good memories.",
+	"version": "1.0.0",
+	"icons": {
+		"128": "timber-heart.png"
+	},
+	"action": {
+		"default_icon": "timber-heart.png",
+		"default_popup": "popup.html"
+	}
+}

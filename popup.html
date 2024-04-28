@@ -1,0 +1,64 @@
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+	* {
+		font-family: Poppins, sans-serif;
+	}
+
+	main {
+		width: max-content;
+	}
+
+	#options {
+		width: max-content;
+	}
+
+	#options > .field > .checkbox {
+		width: 100%;
+	}
+</style>
+
+<link rel="stylesheet" href="bulma.min.css">
+
+<main class="p-4">
+	<h1 class="title mt-3 is-4">Outer Wilds memories !</h1>
+	<hr>
+	<div id="options">
+		<div class="field">
+			<div class="checkbox is-flex is-justify-content-space-between">
+				Use base-game OST
+				<input type="checkbox" name="use-basegame" id="use-basegame" class="ml-3" checked>
+			</div>
+		</div>
+		<div class="field">
+			<div class="checkbox is-flex is-justify-content-space-between">
+				Use DLC OST
+				<input type="checkbox" name="use-dlc" id="use-dlc" class="ml-3" checked>
+			</div>
+		</div>
+		<div class="field">
+			<div class="checkbox is-flex is-justify-content-space-between">
+				Use "The Lost Reels"
+				<input type="checkbox" name="use-lostreels" id="use-lostreels" class="ml-3">
+			</div>
+		</div>
+	</div>
+	<div id="action" class="mt-4">
+		<div class="field is-flex is-justify-content-space-between">
+			<button class="button is-primary mr-3">New track</button>
+			<input type="text" name="track-url" id="track-url" class="input" placeholder="Track's URL" readonly>
+		</div>
+		<div class="field is-flex is-justify-content-space-between">
+			<button class="button is-link mr-3" style="width: 100%;" id="copy-button">Copy URL</button>
+			<button class="button is-link" id="new-tab-button">Open in new Tab</button>
+		</div>
+	</div>
+	<hr>
+	<div id="notification" class="title is-6">Start by clicking the "New track" button !</div>
+	<div id="video" class="is-flex is-justify-content-center">
+		<iframe src="" frameborder="0" width="400" height="240"></iframe>
+	</div>
+</main>
+
+<script src="main.js"></script>
+<script src="actions.js"></script>
